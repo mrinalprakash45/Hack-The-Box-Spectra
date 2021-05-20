@@ -1,0 +1,23 @@
+┌──(root💀kali)-[/home/kali/spectra]
+└─# gobuster dir -u http://10.10.10.229/ -w /usr/share/wordlists/dirb/common.txt
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.10.229/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2021/05/20 08:38:15 Starting gobuster in directory enumeration mode
+===============================================================
+/index.html           (Status: 200) [Size: 283]
+/main                 (Status: 301) [Size: 169] [--> http://10.10.10.229/main/]
+/testing              (Status: 301) [Size: 169] [--> http://10.10.10.229/testing/]
+                                                                                  
+===============================================================
+2021/05/20 08:41:29 Finished
+===============================================================
